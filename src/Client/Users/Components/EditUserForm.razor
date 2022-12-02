@@ -1,0 +1,50 @@
+﻿<MudDialog>
+    <TitleContent>
+        <MudText Typo="Typo.h6">
+            <MudIcon Icon="@Icons.Material.Filled.Edit" Class="mr-3 mb-n1" />
+            Klant aanpassen
+        </MudText>
+    </TitleContent>
+    <DialogContent>
+            <MudPaper Class="pa-4">
+                <EditForm Model="user">
+                    <MudTextField 
+                        Label="Voornaam"
+                        Variant="MudBlazor.Variant.Text"
+                        @bind-Value="user.FirstName"
+                        InputType="InputType.Text" 
+                    />
+                    <MudTextField 
+                        Label="Achternaam"
+                        Variant="MudBlazor.Variant.Text"
+                        @bind-Value="user.LastName"
+                        InputType="InputType.Text" 
+                    />
+                    <MudTextField 
+                        Label="E-mail"
+                        Variant="MudBlazor.Variant.Text"
+                        @bind-Value="user.Email"
+                        InputType="InputType.Email" 
+                    />
+                    <MudTextField 
+                        Label="Geboortedatum"
+                        Variant="MudBlazor.Variant.Text"
+                        InputType="InputType.Date"
+                        Format="yyyy-MM-dd"
+                        @bind-Value="user.DateOfBirth" />
+                <MudTextField Label="Adres"
+                              Variant="MudBlazor.Variant.Text"
+                              @bind-Value="user.Address"
+                              InputType="InputType.Text" />
+                <MudTextField Label="Telefoon"
+                              Variant="MudBlazor.Variant.Text"
+                              @bind-Value="user.PhoneNumber"
+                              InputType="InputType.Text" />
+                </EditForm>
+            </MudPaper>
+        <DialogActions>
+            <MudButton OnClick="Cancel">Annuleer</MudButton>
+            <MudButton Color="Color.Success" OnClick="EditUser">Opslaan</MudButton>
+        </DialogActions>
+    </DialogContent>
+</MudDialog>

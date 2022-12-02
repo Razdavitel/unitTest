@@ -1,0 +1,9 @@
+@page "/payments"
+@using Squads.Client.Payments.Components
+@attribute [Authorize(Roles="Admin")]
+
+<div class="ma-4 pa-4" MaxWidth="MaxWidth.ExtraLarge">
+    <TitleBar title="Betalingen Beheren">
+    </TitleBar>
+    <PaymentList />
+</div>

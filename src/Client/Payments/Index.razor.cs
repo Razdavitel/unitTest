@@ -1,0 +1,1 @@
+namespace Squads.Client.Payments;

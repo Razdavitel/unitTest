@@ -1,0 +1,19 @@
+﻿<div class="col">
+    <div class="col" style="margin-bottom: 16px">
+        <div class="row-md-3">
+            <h3>@Session.Title</h3>
+            <h4><RadzenIcon Icon="event" />  @Session.StartsAt.ToShortDateString()</h4>
+            <h4><RadzenIcon Icon="schedule" />  @Session.StartsAt.ToShortTimeString() - @Session.EndsAt.ToShortTimeString()</h4>
+            <h4><RadzenIcon Icon="people_outline" />   @Session.Trainees.Count / 6</h4>
+            <h5>   @Session.Description</h5>
+
+        </div>
+        <div>
+        </div>
+        <div class="row-md-3">
+            <RadzenButton Icon="mode" Click="@(args => OnEditSessionAsync())" ButtonStyle="ButtonStyle.Primary" Size="ButtonSize.Medium" Class="rz-border-radius-10 rz-shadow-10" />
+            <RadzenButton Icon="delete" Click="@(args => OnDeleteSessionAsync())" ButtonStyle="ButtonStyle.Secondary" Size="ButtonSize.Medium" Class="rz-border-radius-10 rz-shadow-10" />
+        </div>
+    </div>
+
+</div>

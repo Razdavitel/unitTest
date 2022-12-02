@@ -1,0 +1,33 @@
+﻿@using Squads.Client.Auth.Components
+@inherits LayoutComponentBase
+
+<MudThemeProvider @bind-IsDarkMode="@_isDarkMode" Theme="_theme" />
+<MudDialogProvider />
+<MudSnackbarProvider />
+<RadzenDialog />
+<RadzenNotification />
+<RadzenContextMenu />
+<RadzenTooltip />
+
+<MudLayout>
+    <MudAppBar Color="MudBlazor.Color.Primary" Elevation="0">
+        <MudIconButton 
+            Icon="@Icons.Material.Filled.Menu"
+            Color="MudBlazor.Color.Secondary" 
+            Edge="Edge.Start" 
+            OnClick="@((e) => DrawerToggle())" 
+        />
+        <MudSpacer />
+    </MudAppBar>
+    <MudDrawer 
+        @bind-Open="@_drawerOpen">
+        <div class="mud-layout d-flex flex-column justify-space-between">
+            <SideNavMenu />
+            <AuthButton />
+        </div>
+    </MudDrawer>
+    <MudMainContent>
+        @Body
+    </MudMainContent>
+</MudLayout>
+

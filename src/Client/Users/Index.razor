@@ -1,0 +1,19 @@
+﻿@page "/users"
+@using Squads.Client.Users.Components
+@attribute [Authorize(Roles="Admin")]
+
+<div class="ma-4 pa-4" MaxWidth="MaxWidth.ExtraLarge">
+    <TitleBar title="klanten beheer">
+        <MudButton
+            Color="Color.Success"
+            Variant="MudBlazor.Variant.Filled" 
+            StartIcon="@Icons.Material.Filled.Add" 
+            IconColor="Color.Surface" 
+            Size="Size.Medium"
+            OnClick="Create"
+        >
+            Klant Toevoegen
+        </MudButton>
+    </TitleBar>
+    <UserTable/>
+</div>

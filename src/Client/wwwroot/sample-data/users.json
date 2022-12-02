@@ -1,0 +1,13 @@
+﻿[
+  {
+    "UserName": "testUserName",
+    "Email": "test@mail.com",
+    "Address": {
+      "Country": "Belgium",
+      "City": "Gent",
+      "Postalcode": "9000",
+      "Street": "HogentStraat 9"
+    }
+  }
+ 
+]

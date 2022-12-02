@@ -1,0 +1,61 @@
+@if(Loading || Plans == null)
+{
+    <div class="mud-height-full mud-width-full d-flex justify-center align-content-center">
+        <MudProgressCircular Color="Color.Primary" Size="Size.Large" Indeterminate="true"/>
+    </div>
+} 
+else 
+{
+    @if(Alert != null){
+        <MudAlert Severity="Severity.Error">@Alert</MudAlert>
+    }
+    <MudDropContainer T="UserItem" Items="Users" ItemsSelector="@((item,dropzone) => item.PricePlanId == dropzone)" ItemDropped="ItemUpdated">
+        <ChildContent>
+            <MudExpansionPanels MultiExpansion="true">
+            @foreach (var pricePlan in Plans)
+            {
+                <MudExpansionPanel>
+                    <TitleContent>
+                        <div class="d-flex justify-space-between align-center">
+                            <MudText>@pricePlan.name</MudText>
+                            <div class="d-flex align-center">
+                                <MudIcon Icon="@Icons.Filled.CalendarMonth" class="mr-1 ml-3"/>
+                                €@pricePlan.SubscriptionPrice
+                                <MudIcon Icon="@Icons.Filled.FeaturedPlayList" class="mr-1 ml-3"></MudIcon>
+                                €@pricePlan.TurnPrice
+                                <MudIcon Icon="@Icons.Filled.People" class="mr-1 ml-3"></MudIcon>
+                                @AmountOfUsersInPricePlan(pricePlan.Id)
+                            </div> 
+                            <div class="d-flex ma-2 gap-1">
+                                <MudFab 
+                                    Color="Color.Info" 
+                                    Icon="@Icons.Material.Filled.Edit" 
+                                    Size="Size.Small" 
+                                    IconSize="Size.Small" 
+                                    @onclick=@(()=>UpdatePricePlan(pricePlan))
+                                    DisableElevation
+                                />
+                                <MudFab 
+                                    Color="Color.Error" 
+                                    Icon="@Icons.Material.Filled.Delete" 
+                                    Size="Size.Small" IconSize="Size.Small" 
+                                    @onclick=@(()=>DeletePricePlan(pricePlan))
+                                    DisableElevation
+                                />
+                            </div>
+                        </div>
+                    </TitleContent>
+                    <ChildContent>
+                        <MudList Clickable="true" Style="max-height:400px; overflow:scroll;">
+                            <MudDropZone T="UserItem" Style="min-height:100px;" Identifier="@pricePlan.Id.ToString()" />
+                        </MudList>
+                    </ChildContent>
+                </MudExpansionPanel>   
+            }
+            </MudExpansionPanels>
+        </ChildContent>
+        <ItemRenderer>
+            <MudListItem Text="@context.Name" Icon="@Icons.Filled.AccountCircle"/>
+        </ItemRenderer>
+</MudDropContainer>
+}

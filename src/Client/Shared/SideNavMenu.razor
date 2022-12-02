@@ -1,0 +1,29 @@
+﻿<MudNavMenu Class="mud-width-full py-3 px-2">
+    <MudImage Fluid="true"
+                Src="images\Transparant-zwart.png"
+            Alt="Logo SQUADS"
+                Class="rounded-lg pd-16" />
+    <MudDivider Class="my-2" />
+    <AuthorizeView>
+        <NotAuthorized>
+            <MudNavLink Href="/login" Icon="@Icons.Filled.Login">Login</MudNavLink>
+            <MudNavLink Href="/register" Icon="@Icons.Filled.AppRegistration">Register</MudNavLink>
+        </NotAuthorized>
+        <Authorized>
+            <MudNavLink Href="/dashboard" Icon="@Icons.Filled.Dashboard">Dashboard</MudNavLink>
+            <MudNavLink Href="/sessions" Icon="@Icons.Filled.FitnessCenter">Squad Sessies</MudNavLink>
+            <MudNavGroup Title="Gebruiker" Icon="@Icons.Filled.People" Expanded="true">
+                <MudNavLink Href="/records" Icon="@Icons.Filled.ManageAccounts">Profiel</MudNavLink>
+                <MudNavLink Href="/records" Icon="@Icons.Filled.MonitorHeart">Progres</MudNavLink>
+                <MudNavLink Href="/subscriptions" Icon="@Icons.Filled.Receipt">Abonnement</MudNavLink>
+            </MudNavGroup>
+            <MudNavGroup Title="Admin" Icon="@Icons.Filled.People" Expanded="false">
+                <MudNavLink Href="/payments" Icon="@Icons.Filled.AttachMoney">Betalingen</MudNavLink>
+                <MudNavLink Href="/priceplans" Icon="@Icons.Filled.AccountBalanceWallet">Prijzen</MudNavLink>
+                <MudNavLink Href="/plannerAdmin" Icon="@Icons.Filled.EditCalendar">Planner</MudNavLink>
+                <MudNavLink Href="/users" Icon="@Icons.Filled.VerifiedUser">Users</MudNavLink>
+            </MudNavGroup>
+            <MudNavLink Href="/settings" Icon="@Icons.Filled.Settings">Settings</MudNavLink>
+        </Authorized>
+    </AuthorizeView>
+</MudNavMenu>

@@ -1,0 +1,56 @@
+@using Squads.Shared.Payments;
+
+<MudTable
+    Elevation=25
+    @ref="_table"
+    Items="_payments"
+    SortLabel="Sort By"
+    MultiSelection="true"
+    @bind-SelectedItems="_selection"
+    Filter="new Func<PaymentDto.WithUser, bool>(FilterSome)"
+>
+    <ToolBarContent>
+        <MudText Typo="Typo.h6">Betalingen</MudText>
+        <MudSpacer></MudSpacer>
+        @if(_selection.Count != 0)
+        {
+            <MudButton Color="Color.Info" OnClick="ConfirmPayment">Bevesting Betaling</MudButton>
+        }
+        <MudSpacer></MudSpacer>
+        <div class="d-flex gap-3 align-content-center">
+            <MudDatePicker @bind-Date="_startDate" Label="Vanaf"></MudDatePicker>
+            <MudDatePicker @bind-Date="_untill" Label="Tot"></MudDatePicker>
+            <MudAutocomplete
+                T="string" 
+                Label="Gebruikersnaam"
+                @bind-Value="_userName"
+                ResetValueOnEmptyText="true"
+                CoerceText="false"
+                CoerceValue="false"
+                SearchFunc="_autoComplete.Search" 
+                AdornmentIcon="@Icons.Material.Filled.Search" AdornmentColor="Color.Primary"
+            />
+            <MudSwitch 
+                @bind-Checked="_unpaid"
+                Label="Enkel openstaand" 
+                Color="Color.Info"
+                UnCheckedColor="Color.Tertiary"
+            />
+        </div>
+    </ToolBarContent>
+    <HeaderContent>
+        <MudTh><MudTableSortLabel InitialDirection="SortDirection.Descending" SortBy="new Func<PaymentDto.WithUser, object>(x => x.CreatedOn)">Datum</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<PaymentDto.WithUser, object>(x => x.Price)">Bedrag</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<PaymentDto.WithUser, object>(x => x.User.FirstName)">Klant</MudTableSortLabel></MudTh>
+        <MudTh><MudTableSortLabel SortBy="new Func<PaymentDto.WithUser, object>(x => x.PayedAt == null)">Betaald</MudTableSortLabel></MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="Date">@context.CreatedOn.ToShortDateString()</MudTd> 
+        <MudTd DataLabel="Amount">@context.Price</MudTd>
+        <MudTd DataLabel="Customer">@context.User.FirstName @context.User.LastName</MudTd>
+        <MudTd DataLabel="Unpaid"><MudCheckBox T="bool" Checked="@(context.PayedAt != null)" Disabled=true></MudCheckBox></MudTd>
+    </RowTemplate>
+    <PagerContent>
+       <MudTablePager InfoFormat="{first_item}-{last_item} of {all_items}" HorizontalAlignment="HorizontalAlignment.Left" HidePageNumber="false" HidePagination="false" HideRowsPerPage="false" /> 
+    </PagerContent>
+</MudTable>

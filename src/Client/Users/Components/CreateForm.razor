@@ -1,0 +1,52 @@
+﻿@if(Loading)
+{
+    <div class="mud-height-full mud-width-full d-flex justify-center align-content-center">
+        <MudProgressCircular Color="Color.Primary" Size="Size.Large" Indeterminate="true"/>
+    </div>
+}
+else
+{
+    <MudDialog>
+        <TitleContent>
+            <MudText Typo="Typo.h6">
+                <MudIcon Icon="@Icons.Material.Filled.PersonAdd" Class="mr-3 mb-n1" />
+                Klant Toevoegen
+            </MudText>
+        </TitleContent>
+        <DialogContent>
+            <MudForm 
+                Class="py-3 px-10" 
+                Validation="Validator.ValidateValue"
+                Model="Create"
+                @ref="Form" 
+                @bind-IsValid="Success" 
+                @bind-Errors="Errors"
+            >
+                <MudTextField 
+                    T="string"
+                    Label="Voornaam Klant" 
+                    Required="true"
+                    RequiredError="De voornaam van een klant moet gekend zijn."
+                    @bind-Value="Create.FirstName"
+                />
+                <MudTextField 
+                    T="string"
+                    Label="Achternaam Klant" 
+                    Required="true"
+                    RequiredError="De achternaam van een klant moet gekend zijn."
+                    @bind-Value="Create.LastName"
+                />
+                <MudTextField 
+                    T="string"
+                    Label="Email Klant" 
+                    Required="true"
+                    RequiredError="De email van een klant moet meegegeven worden."
+                    @bind-Value="Create.Email"
+                />
+            </MudForm>
+        </DialogContent>
+        <DialogActions>
+            <MudButton Color="Color.Success" OnClick="CreateUser">Voeg Klant Toe</MudButton>
+        </DialogActions>
+    </MudDialog>
+}

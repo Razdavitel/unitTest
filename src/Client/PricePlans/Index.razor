@@ -1,0 +1,18 @@
+@page "/priceplans"
+@attribute [Authorize(Roles = "Admin")]
+
+<div class="ma-4 pa-4" MaxWidth="MaxWidth.ExtraLarge">
+    <TitleBar title="Prijzen Beheren">
+        <MudButton
+            Color="Color.Success"
+            Variant="MudBlazor.Variant.Filled" 
+            StartIcon="@Icons.Material.Filled.Add" 
+            IconColor="Color.Surface" 
+            Size="Size.Medium"
+            @onclick=@(()=>CreateNew())
+        >
+            Prijs Toevoegen
+        </MudButton>
+    </TitleBar>
+    <PricePlanList />
+</div>

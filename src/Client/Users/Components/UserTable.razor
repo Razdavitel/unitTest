@@ -1,0 +1,52 @@
+﻿@using Squads.Shared.Users
+
+<style>
+    .selected {
+        background-color: #1E88E5 !important;
+    }
+
+        .selected > td {
+            color: white !important;
+        }
+
+            .selected > td .mud-input {
+                color: white !important;
+            }
+</style>
+
+<MudTable 
+    Elevation="25" 
+    @ref="mudTable"
+    Items="customers"
+    RowClassFunc="@SelectedRowClassFunc" 
+    OnRowClick="RowClickEvent" T="UserDto.Index"
+    Filter="new Func<UserDto.Index, bool>(Search)"
+ >
+    <ToolBarContent>
+        <MudText Typo="Typo.h6">Klanten</MudText>
+        <MudSpacer />
+        <MudTextField 
+            @bind-Value="searchString"
+            Placeholder="Filter klanten..." 
+            Adornment="Adornment.Start" 
+            AdornmentIcon="@Icons.Material.Filled.Search" 
+            IconSize="Size.Medium" 
+            Class="mt-0">
+        </MudTextField>
+    </ToolBarContent>
+    <HeaderContent>
+        <MudTh>Voornaam</MudTh>
+        <MudTh>Achternaam</MudTh>
+        <MudTh>Email</MudTh>
+        <MudTh>Acties</MudTh>
+    </HeaderContent>
+    <RowTemplate>
+        <MudTd DataLabel="FirstName">@context.FirstName</MudTd>
+        <MudTd DataLabel="LastName">@context.LastName</MudTd>
+        <MudTd DataLabel="Email">@context.Email</MudTd>
+        <MudTd DataLabel="">
+            <MudFab @onclick="@(()=>Edit(@context))" Color="Color.Info" Icon="@Icons.Material.Filled.Edit" Size="Size.Small" IconSize="Size.Small" />
+            <MudFab @onclick="@(()=>Delete(@context))" Color="Color.Error" Icon="@Icons.Material.Filled.Delete" Size="Size.Small" IconSize="Size.Small" />
+        </MudTd>
+    </RowTemplate>
+</MudTable>

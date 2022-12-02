@@ -1,0 +1,46 @@
+﻿@page "/plannerAdmin"
+@attribute [Authorize(Roles = "Admin")]
+
+@if (sessions == null)
+{
+    <MudProgressLinear Color="MudBlazor.Color.Primary" Indeterminate="true" Class="my-7" />
+}
+else
+{
+    <RadzenScheduler @ref=@scheduler
+                 TItem="AppointmentData" Data=@data
+                 StartProperty="Start" EndProperty="End"
+                 TextProperty="Text"
+                 SelectedIndex="2"
+                 SlotRender=@OnSlotRender
+                 SlotSelect=@OnSlotSelect
+                 AppointmentRender=@OnAppointmentRender
+                 AppointmentSelect=@OnAppointmentSelect>
+
+        <Template Context="data">
+            @{
+                var ses = (SessionDto.Index)data.Data;
+
+            }
+            <div><strong>@data.Text</strong></div>
+            <div>
+
+                @if (@ses.Workout.WorkoutType == 0)
+                {
+                    <div>Yoga   @ses.Trainees.Count/6</div>
+                }
+                else
+                {
+                    <div>Group Training   @ses.Trainees.Count/6</div>
+                }
+            </div>
+
+        </Template>
+        <ChildContent>
+            <RadzenDayView />
+            <RadzenWeekView />
+            <RadzenMonthView />
+        </ChildContent>
+    </RadzenScheduler>
+}
+

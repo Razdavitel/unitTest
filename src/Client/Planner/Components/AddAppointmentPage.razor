@@ -1,0 +1,62 @@
+﻿@using static Squads.Client.Planner.Index
+
+<RadzenTemplateForm TItem="SessionDto.Mutate" Data="@model" Submit=@OnSubmit>
+    <div class="row" style="margin-bottom: 16px">
+        <div class="col-md-3">
+            <RadzenLabel Text="@nameof(model.Title)" />
+        </div>
+        <div class="col">
+            <RadzenTextBox @bind-Value="@model.Title" Name="Text" />
+            <RadzenRequiredValidator Text="Title is required" Component="Text" />
+        </div>
+    </div>
+    <div class="row" style="margin-bottom: 16px">
+        <div class="col-md-3">
+            <RadzenLabel Text="@nameof(model.Description)" />
+        </div>
+        <div class="col">
+            <RadzenTextArea @bind-Value="@model.Description" Name="Text" />
+        </div>
+    </div>
+
+    <div class="row" style="margin-bottom: 16px">
+        <div class="col-md-3">
+            <RadzenLabel Text="Start Date" />
+        </div>
+        <div class="col">
+            <RadzenDatePicker @bind-Value="@model.StartsAt" Name="Start" ShowTime="true" />
+            <RadzenRequiredValidator Text="Start is required" Component="Start" />
+        </div>
+    </div>
+    <div class="row" style="margin-bottom: 16px">
+        <div class="col-md-3">
+            <RadzenLabel Text="End Date" />
+        </div>
+        <div class="col">
+            <RadzenDatePicker Name="End" @bind-Value="@model.EndsAt" ShowTime="true" />
+            <RadzenRequiredValidator Component="End" Text="End Date is required" />
+        </div>
+    </div>
+
+    <div class="row" style="margin-bottom: 16px">
+        <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.H3">Kies een Coach</RadzenText>
+        <RadzenDropDown AllowClear="true" TValue="int" FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive" AllowFiltering="true" Class="w-100"
+                        Placeholder="Select..." Data=@coaches TextProperty="FirstName" ValueProperty="Id"
+                        Change=@(args => OnChangeCoach(args)) />
+
+    </div>
+    <div class="row" style="margin-bottom: 16px">
+        <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.H3">Kies een Workout</RadzenText>
+        <RadzenDropDown AllowClear="true" TValue="int" FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive" AllowFiltering="true" Class="w-100"
+                        Placeholder="Select Workout..." Data=@workouts TextProperty="Id" ValueProperty="Id"
+                        Change=@(args => OnChangeWorkout(args)) />
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col">
+            <RadzenButton ButtonType="Radzen.ButtonType.Submit" Text="Save" />
+        </div>
+    </div>
+</RadzenTemplateForm>

@@ -1,0 +1,29 @@
+﻿<div class="col">
+    <div class="col" style="margin-bottom: 16px">
+        <div class="row-md-3">
+            <h3>@Session.Title</h3>
+            <h4><RadzenIcon Icon="event" />  @Session.StartsAt.ToShortDateString()</h4>
+            <h4><RadzenIcon Icon="schedule" />  @Session.StartsAt.ToShortTimeString() - @Session.EndsAt.ToShortTimeString()</h4>
+            <h4><RadzenIcon Icon="people_outline" />   @Session.Trainees?.Count / 6</h4>
+            <h5>   @Session.Description</h5>
+
+        </div>
+        <div>
+
+        </div>
+        <div class="row-md-3">
+            @if (isFull && !hasJoined) {
+                <MudChip Icon="@Icons.Filled.WarningAmber" Label="true" Color="Color.Warning" Style="color:black;">Vol</MudChip>
+            }
+            else{
+            @if (!hasJoined)
+            {
+            <RadzenButton Icon="add" Click="@(args => OnJoinSessionAsync())" ButtonStyle="ButtonStyle.Primary" Size="ButtonSize.Medium" Class="rz-border-radius-10 rz-shadow-10" />
+            }
+            else{ <RadzenButton Icon="remove" Click="@(args => OnLeaveSessionAsync())" ButtonStyle="ButtonStyle.Secondary" Size="ButtonSize.Medium" Class="rz-border-radius-10 rz-shadow-10" />
+            }
+            }
+            </div>
+    </div>
+
+</div>

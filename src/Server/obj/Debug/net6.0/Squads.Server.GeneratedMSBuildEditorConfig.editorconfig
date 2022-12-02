@@ -1,0 +1,27 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.PublishSingleFile = 
+build_property.IncludeAllContentForSelfExtract = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.RootNamespace = Squads.Server
+build_property.RootNamespace = Squads.Server
+build_property.ProjectDir = D:\Projecten\devops-22-23-dotnet-t02 - ROBBE\src\Server\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Projecten\devops-22-23-dotnet-t02 - ROBBE\src\Server
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Server/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 

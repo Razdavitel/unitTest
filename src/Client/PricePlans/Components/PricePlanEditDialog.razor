@@ -1,0 +1,46 @@
+@if(Loading)
+{
+    <div class="mud-height-full mud-width-full d-flex justify-center align-content-center">
+        <MudProgressCircular Color="Color.Primary" Size="Size.Large" Indeterminate="true"/>
+    </div>
+}
+else
+{
+    <MudDialog>
+        <DialogContent >
+            <MudForm 
+                Class="py-3 px-10" 
+                Validation="Validator.ValidateValue"
+                Model="mutate"
+                @ref="Form" 
+                @bind-IsValid="Success" 
+                @bind-Errors="Errors"
+            >
+                <MudTextField
+                    T="string" 
+                    Label="Name" 
+                    Required="true" 
+                    RequiredError="Een naam is vereist voor een prijs segment."
+                    @bind-Text="mutate.name"
+                />
+                <MudNumericField 
+                    Label="Prijs maandabonnement"
+                    @bind-Value="mutate.SubscriptionPrice"
+                    For="(()=>mutate.SubscriptionPrice)"
+                    Required="true"
+                    RequiredError="De prijs van een maandabonnement is verplicht."
+                />
+                <MudNumericField 
+                    Label="Prijs 10 beurten"
+                    @bind-Value="mutate.TurnPrice"
+                    For="(()=>mutate.TurnPrice)"
+                    Required="true"
+                    RequiredError="De prijs van een beurten kaart is verplicht."
+                />
+            </MudForm>
+        </DialogContent>
+        <DialogActions>
+            <MudButton Color="Color.Success" OnClick="Submit">Opslaan</MudButton>
+        </DialogActions>
+    </MudDialog>
+}

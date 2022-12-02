@@ -1,0 +1,16 @@
+﻿<MudContainer MaxWidth="mw" class="mt-4 mb-8">
+    <div style="display: flex; justify-content: space-between">
+        <MudText Color="MudBlazor.Color.Primary" style="opacity: 0.6;" Typo="Typo.h3" >@title</MudText>
+        @ChildContent
+    </div>
+    <MudDivider class="my-4"/>
+</MudContainer>
+
+@code {
+    [Parameter]
+    public string title { get; set; }
+    [Parameter]
+    public MaxWidth mw { get; set; } = MaxWidth.ExtraLarge;
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+}

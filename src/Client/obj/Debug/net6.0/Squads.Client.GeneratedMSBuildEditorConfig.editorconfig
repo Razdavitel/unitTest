@@ -1,0 +1,223 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = browser
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = true
+build_property.IncludeAllContentForSelfExtract = 
+build_property.RootNamespace = Squads.Client
+build_property.RootNamespace = Squads.Client
+build_property.ProjectDir = D:\Projecten\devops-22-23-dotnet-t02 - ROBBE\src\Client\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Projecten\devops-22-23-dotnet-t02 - ROBBE\src\Client
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Activations/Components/ActivateForm.razor]
+build_metadata.AdditionalFiles.TargetPath = QWN0aXZhdGlvbnNcQ29tcG9uZW50c1xBY3RpdmF0ZUZvcm0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Activations/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = QWN0aXZhdGlvbnNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Auth/Components/AuthButton.razor]
+build_metadata.AdditionalFiles.TargetPath = QXV0aFxDb21wb25lbnRzXEF1dGhCdXR0b24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Auth/Components/LoginForm.razor]
+build_metadata.AdditionalFiles.TargetPath = QXV0aFxDb21wb25lbnRzXExvZ2luRm9ybS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Auth/Components/RegisterForm.razor]
+build_metadata.AdditionalFiles.TargetPath = QXV0aFxDb21wb25lbnRzXFJlZ2lzdGVyRm9ybS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Auth/Components/UserInfo.razor]
+build_metadata.AdditionalFiles.TargetPath = QXV0aFxDb21wb25lbnRzXFVzZXJJbmZvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Auth/Login.razor]
+build_metadata.AdditionalFiles.TargetPath = QXV0aFxMb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Auth/Register.razor]
+build_metadata.AdditionalFiles.TargetPath = QXV0aFxSZWdpc3Rlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Auth/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = QXV0aFxfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Dashboard/Components/BarChart.razor]
+build_metadata.AdditionalFiles.TargetPath = RGFzaGJvYXJkXENvbXBvbmVudHNcQmFyQ2hhcnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Dashboard/Components/Label.razor]
+build_metadata.AdditionalFiles.TargetPath = RGFzaGJvYXJkXENvbXBvbmVudHNcTGFiZWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Dashboard/Components/SquadBadge.razor]
+build_metadata.AdditionalFiles.TargetPath = RGFzaGJvYXJkXENvbXBvbmVudHNcU3F1YWRCYWRnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Dashboard/Components/SquadCard.razor]
+build_metadata.AdditionalFiles.TargetPath = RGFzaGJvYXJkXENvbXBvbmVudHNcU3F1YWRDYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Dashboard/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = RGFzaGJvYXJkXEluZGV4LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Dashboard/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = RGFzaGJvYXJkXF9JbXBvcnRzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Payments/Components/ConfirmPaymentDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = UGF5bWVudHNcQ29tcG9uZW50c1xDb25maXJtUGF5bWVudERpYWxvZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Payments/Components/PaymentList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGF5bWVudHNcQ29tcG9uZW50c1xQYXltZW50TGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Payments/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGF5bWVudHNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Payments/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = UGF5bWVudHNcX0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Planner/Components/AddAppointmentPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGxhbm5lclxDb21wb25lbnRzXEFkZEFwcG9pbnRtZW50UGFnZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Planner/Components/EditAppointmentPage.razor]
+build_metadata.AdditionalFiles.TargetPath = UGxhbm5lclxDb21wb25lbnRzXEVkaXRBcHBvaW50bWVudFBhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Planner/Components/SessionView.razor]
+build_metadata.AdditionalFiles.TargetPath = UGxhbm5lclxDb21wb25lbnRzXFNlc3Npb25WaWV3LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Planner/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGxhbm5lclxJbmRleC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Planner/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = UGxhbm5lclxfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/PricePlans/Components/PricePlanEditDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = UHJpY2VQbGFuc1xDb21wb25lbnRzXFByaWNlUGxhbkVkaXREaWFsb2cucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/PricePlans/Components/PricePlanList.razor]
+build_metadata.AdditionalFiles.TargetPath = UHJpY2VQbGFuc1xDb21wb25lbnRzXFByaWNlUGxhbkxpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/PricePlans/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UHJpY2VQbGFuc1xJbmRleC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/PricePlans/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = UHJpY2VQbGFuc1xfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Sessions/Components/DatePicker.razor]
+build_metadata.AdditionalFiles.TargetPath = U2Vzc2lvbnNcQ29tcG9uZW50c1xEYXRlUGlja2VyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Sessions/Components/SessionCard.razor]
+build_metadata.AdditionalFiles.TargetPath = U2Vzc2lvbnNcQ29tcG9uZW50c1xTZXNzaW9uQ2FyZC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Sessions/Components/SessionView.razor]
+build_metadata.AdditionalFiles.TargetPath = U2Vzc2lvbnNcQ29tcG9uZW50c1xTZXNzaW9uVmlldy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Sessions/Components/TimePicker.razor]
+build_metadata.AdditionalFiles.TargetPath = U2Vzc2lvbnNcQ29tcG9uZW50c1xUaW1lUGlja2VyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Sessions/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = U2Vzc2lvbnNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Sessions/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = U2Vzc2lvbnNcX0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Shared/Alert.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEFsZXJ0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Shared/AlertDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEFsZXJ0RGlhbG9nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Shared/SideNavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFNpZGVOYXZNZW51LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Shared/TitleBar.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFRpdGxlQmFyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Users/Components/CreateForm.razor]
+build_metadata.AdditionalFiles.TargetPath = VXNlcnNcQ29tcG9uZW50c1xDcmVhdGVGb3JtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Users/Components/DeleteForm.razor]
+build_metadata.AdditionalFiles.TargetPath = VXNlcnNcQ29tcG9uZW50c1xEZWxldGVGb3JtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Users/Components/EditUserForm.razor]
+build_metadata.AdditionalFiles.TargetPath = VXNlcnNcQ29tcG9uZW50c1xFZGl0VXNlckZvcm0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Users/Components/UserTable.razor]
+build_metadata.AdditionalFiles.TargetPath = VXNlcnNcQ29tcG9uZW50c1xVc2VyVGFibGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Users/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = VXNlcnNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Users/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = VXNlcnNcX0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Workouts/Components/ToolBar.razor]
+build_metadata.AdditionalFiles.TargetPath = V29ya291dHNcQ29tcG9uZW50c1xUb29sQmFyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Workouts/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = V29ya291dHNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-3n9nwdc19y
+
+[D:/Projecten/devops-22-23-dotnet-t02 - ROBBE/src/Client/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-ot6tab4wc5

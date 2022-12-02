@@ -1,0 +1,44 @@
+﻿<MudCard Class="border-solid border-2 mud-border-primary rounded-xl">
+    <MudCardHeader>
+        <CardHeaderAvatar>
+            <MudIcon Icon="@Icons.Material.Filled.FitnessCenter" Color="MudBlazor.Color.Secondary" />
+        </CardHeaderAvatar>
+        <CardHeaderContent>
+            <MudText Color="MudBlazor.Color.Secondary" Typo="Typo.body1">@Title</MudText>
+        </CardHeaderContent>
+        <CardHeaderActions>
+        </CardHeaderActions>
+    </MudCardHeader>
+    <MudDivider Class="my-2" />
+    <MudCardContent Class="">
+        <MudExpansionPanels Class="border-hidden">
+            <MudExpansionPanel>
+                <TitleContent>
+                    <div class="d-flex">
+                        <MudIcon Icon="@Icons.Material.Filled.Info" class="mr-3"></MudIcon>
+                        <MudText><strong>Info</strong></MudText>
+                    </div>
+                </TitleContent>
+                <ChildContent>
+                    <MudText Color="MudBlazor.Color.Secondary" Typo="Typo.body2">@Description</MudText>
+                </ChildContent>
+            </MudExpansionPanel>
+
+        </MudExpansionPanels>
+    </MudCardContent>
+    <MudCardContent>
+        <MudText Typo="Typo.body1">@StartsAt.ToLongDateString()</MudText>
+        @*<MudText Typo="Typo.body2">This photo was taken in a small village in Istra Croatia.</MudText>*@
+    </MudCardContent>
+    <MudCardContent>
+        <MudText Typo="Typo.body1">@EndsAt.ToLongDateString()</MudText>
+    </MudCardContent>
+    <MudDivider />
+    <MudCardActions>
+        <MudIconButton Icon="@Icons.Material.Filled.AddCircle" Color="MudBlazor.Color.Secondary" />
+        <MudIconButton Icon="@Icons.Material.Filled.RemoveCircle" Color="MudBlazor.Color.Secondary" />
+        <MudDivider Class="my-2" />
+        <MudText Color="MudBlazor.Color.Secondary" Typo="Typo.body1">Plaatsen 0/6</MudText>
+    </MudCardActions>
+</MudCard>
+

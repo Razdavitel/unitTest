@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Domain.Users.User">
+    <Position X="7" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAACAAAAAIAAAAAAAAQABAAAQAAAAEABAA=</HashCode>
+      <FileName>Users\User.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Record" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Domain.Records.Record">
+    <Position X="4.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAIAADACAAAAAAAAAAAAAAAAACAABAAAAASAAAAA=</HashCode>
+      <FileName>Records\Record.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="reports" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Domain.Reports.Report">
+    <Position X="1.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAABQAAAAAAAAAA=</HashCode>
+      <FileName>Reports\Report.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Domain.Common.Entity" Collapsed="true">
+    <Position X="4.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAQAgAAAAAAAAAAAAIAAAAAAAAAAAiA=</HashCode>
+      <FileName>Common\Entity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
