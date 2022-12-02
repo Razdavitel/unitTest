@@ -1,0 +1,14 @@
+﻿<AuthorizeView>
+    <NotAuthorized>
+        <MudButton OnClick="@Login" Variant="MudBlazor.Variant.Filled" Color="MudBlazor.Color.Primary">Login</MudButton>
+    </NotAuthorized>
+    <Authorized>
+        <MudButton 
+            OnClick="@Logout"  
+            Variant="MudBlazor.Variant.Filled" 
+            Color="MudBlazor.Color.Tertiary"
+            DisableElevation="true"
+            Style="border-radius:0; height:10%; min-height:50px; max-height:80px;"
+        >Logout</MudButton>
+    </Authorized>
+</AuthorizeView>

@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "9bf8a44d-501b-4537-906f-33762f2c7f08": {
+      "ProjectGuid": "9bf8a44d-501b-4537-906f-33762f2c7f08",
+      "DisplayName": "Domain",
+      "ColorIndex": 0
+    },
+    "71c14ef7-5e89-4dee-ad4d-400756cc4cf8": {
+      "ProjectGuid": "71c14ef7-5e89-4dee-ad4d-400756cc4cf8",
+      "DisplayName": "Services",
+      "ColorIndex": 1
+    },
+    "7a875252-55eb-4fbe-9e8f-226d6fcb1595": {
+      "ProjectGuid": "7a875252-55eb-4fbe-9e8f-226d6fcb1595",
+      "DisplayName": "Persistence",
+      "ColorIndex": 2
+    },
+    "0e0e2c04-f338-4598-82f6-e43cc30e5a91": {
+      "ProjectGuid": "0e0e2c04-f338-4598-82f6-e43cc30e5a91",
+      "DisplayName": "Squads.Client",
+      "ColorIndex": 3
+    },
+    "04bbff32-018a-44b7-adc1-41f63778985d": {
+      "ProjectGuid": "04bbff32-018a-44b7-adc1-41f63778985d",
+      "DisplayName": "Domain.Tests",
+      "ColorIndex": 4
+    }
+  },
+  "NextColorIndex": 5
+}

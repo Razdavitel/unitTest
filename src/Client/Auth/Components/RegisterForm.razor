@@ -1,0 +1,44 @@
+﻿<MudCard>
+    <MudForm Model="@user" @ref="@form" Validation="@(registerValidator.ValidateValue)" ValidationDelay="10">
+        <MudCardContent>
+            <MudTextField @bind-Value="user.FirstName"
+                          For="@(() => user.FirstName)"
+                          Immediate="true"
+                          Label="FirstName" />
+            <MudTextField @bind-Value="user.LastName"
+                          For="@(() => user.LastName)"
+                          Immediate="true"
+                          Label="LastName" />
+            <MudTextField @bind-Value="user.Email"
+                          For="@(() => user.Email)"
+                          Immediate="true"
+                          Label="Email" />
+            <MudDatePicker 
+                Editable=true
+                @bind-Date="user.DateOfBirth"
+                For="@(() => user.DateOfBirth)"
+                Immediate=True
+                Label="Date Of Birth" 
+            />
+            <MudTextField 
+                Label="Password" 
+                HelperText="Choose a strong password" 
+                Class="mt-3"
+                @bind-Value="user.Password" 
+                For="@(() => user.Password)" 
+                InputType="InputType.Password" 
+            />
+            <MudTextField 
+                Label="Password" 
+                HelperText="Repeat the password" 
+                Class="mt-3"
+                @bind-Value="user.PasswordConfirmation" 
+                For="@(() => user.PasswordConfirmation)" 
+                InputType="InputType.Password" 
+            />
+        </MudCardContent>
+    </MudForm>
+    <MudCardActions>
+        <MudButton Variant="MudBlazor.Variant.Filled" Color="MudBlazor.Color.Primary" Class="ml-auto" OnClick="@(async () => await Submit())">Register</MudButton>
+    </MudCardActions>
+</MudCard>

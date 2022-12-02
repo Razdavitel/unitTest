@@ -1,0 +1,8 @@
+﻿<AuthorizeView Roles="Iron Man">
+    <Authorized>
+        <span>you are authorized as @context.User.Identity.Name</span>
+    </Authorized>
+    <NotAuthorized>
+        <span>you are not authorized</span>
+    </NotAuthorized>
+</AuthorizeView>

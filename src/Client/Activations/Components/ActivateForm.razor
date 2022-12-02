@@ -1,0 +1,56 @@
+@if(_loading)
+{
+    <div class="mud-height-full mud-width-full d-flex justify-center align-content-center">
+        <MudProgressCircular Color="Color.Primary" Size="Size.Large" Indeterminate="true"/>
+    </div>
+}
+else
+{
+    <MudForm 
+        Class="py-3 px-10" 
+        Validation="_validator.ValidateValue"
+        Model="_activateUser"
+        @ref="_form" 
+    >
+        <MudTextField
+            T="string" 
+            Label="Wachtwoord" 
+            Required="true" 
+            InputType="InputType.Password"
+            RequiredError="Gelieve een nieuw wachtwoord te kiezen."
+            @bind-Text="_activateUser.Password"
+            For="(() => _activateUser.Password)"
+        />
+        <MudTextField
+            T="string" 
+            Label="Wachtwoord bevestigen" 
+            Required="true" 
+            InputType="InputType.Password"
+            @bind-Text="_activateUser.confirmPassword"
+            For="@(() => _activateUser.confirmPassword)"
+        />
+        <MudTextField
+            T="string" 
+            Label="Adres" 
+            Immediate="true"
+            @bind-Text="_activateUser.Address"
+            For="@(() => _activateUser.Address)"
+        />
+        <MudTextField
+            T="string" 
+            Label="Telefoonnummer" 
+            Mask="@(new PatternMask("0000 00 00 00"))"
+            @bind-Text="_activateUser.PhoneNumber"
+            For="@(() => _activateUser.PhoneNumber)"
+        />
+        <MudTextField 
+            T="DateTime?" 
+            Format="dd-MM-yyyy" 
+            Label="Geboortedatum"  
+            InputType="InputType.Date"
+            @bind-Value="_activateUser.DateOfBirth"
+            For="@(() => _activateUser.DateOfBirth)"
+        />
+    </MudForm>
+    <MudButton OnClick="Activate">Activeren</MudButton>
+}

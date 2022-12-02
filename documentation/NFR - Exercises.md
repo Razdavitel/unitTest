@@ -1,0 +1,5 @@
+| NFR             | Bruikbaarheid: toegankelijkheid                                                                                                                                                           |
+|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Indicator       | Toegankelijkheid van de Exercises                                                                                                                                                         |
+| Meetvoorschrift | 5 ingelogde gebruikers, met een reservatie voor een les, gaan tijdens de les naar de detailpagina van de workout en bekijken dan de details van de oefening(en) die ze moeten uitvoeren.  |
+| Norm            | De gebruikers kunnen, vanaf van de workout pagina, binnen 2 seconden de details zien van de oefening die ze wensen te raadplegen.                                                      |
