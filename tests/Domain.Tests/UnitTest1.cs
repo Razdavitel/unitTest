@@ -8,6 +8,6 @@ public class UnitTest1
     public void Test1()
     {
         var test = 0;
-        Assert.Equal(test, 0);
+        Assert.Equal(test, 1);
     }
 }
